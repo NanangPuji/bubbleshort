@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace Buble2
+namespace mengurutkandata
 {
     class Program
     {
-        // Deklarasi array int dengan ukuran 20
+        // Deklarasi array int dengan uk
+        // uran 20
         private int[] a = new int[20];
 
         // Deklarasi variabel int untuk menyimpan banyaknya data pada array
