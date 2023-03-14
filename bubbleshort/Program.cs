@@ -1,20 +1,27 @@
 ﻿using System;
 
-namespace mengurutkandata
+namespace mengurutkandata  
 {
     class Program
     {
-        // Deklarasi array int dengan uk
-        // uran 20
+        /// <summary>
+        /// Deklarasi array int dengan uk
+        /// <\summary>
         private int[] a = new int[20];
 
+        /// <summary>
         // Deklarasi variabel int untuk menyimpan banyaknya data pada array
+        /// <\summary>
         private int n;
 
+        /// <summary>
         // Fungsi / Method untuk menerima masukan
+        /// <\summary>
         public void read()
         {
+            /// <summary>
             // Menerima angka untuk menentukan banyaknya data yang disimpan pada array
+            /// <\summary>
             while (true)
             {
                 Console.Write("Masukan banyaknya elemen pada Array: ");
@@ -30,7 +37,9 @@ namespace mengurutkandata
             Console.WriteLine(" Masukan elemen array ");
             Console.WriteLine("-----------------------");
 
+            /// <summary>
             // Pengguna memasukan elemen pada array
+            /// <\summary>
             for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + "> ");
@@ -40,7 +49,9 @@ namespace mengurutkandata
         }
         public void display()
         {
+            /// <summary>
             // Menampilkan array yang tersusun
+            /// <\summary>
             Console.WriteLine("");
             Console.WriteLine("---------------------------------");
             Console.WriteLine("Element array yang telah tersusun");
@@ -53,14 +64,22 @@ namespace mengurutkandata
         }
         public void BubbleSortArray()
         {
+            /// <summary>
             for (int i = 1; i < n; i++) // for n - 1 passes
+            /// <\summary>
             {
+                /// <summary>
                 // Pada pass i,bandingkan n - i elemen pertama dengan elemen
+                /// <summary>
                 for (int j = 0; j < n - i; j++)
                 {
+                    /// <summary>
                     if (a[j] > a[j + 1]) // Jika elemen tidak dalam urutan yang benar
+                    /// <\summary>
                     {
+                        /// <summary>
                         // Tukar elemen
+                        /// <\summary>
                         int temp;
                         temp = a[j];
                         a[j] = a[j + 1];
@@ -72,19 +91,29 @@ namespace mengurutkandata
 
         static void Main(string[] args)
         {
+            /// <summary>
             // Creating the object of the BubbleSort class
+            /// <\summary>
             Program mylist = new Program();
 
+            /// <summary>
             // Pemanggilan funsi untuk menerima elemen array
+            /// <\summary>
             mylist.read();
 
+            /// <summary>
             // Pemanggilan fungsi untuk mengurutkan array
+            /// <\summary>
             mylist.BubbleSortArray();
 
+            /// <summary>
             // Pemanggilan fungsi untuk menampilkan array yang tersusun
+            /// <\summary>
             mylist.display();
 
+            /// <summary>
             // Exit
+            /// <\summary>
             Console.WriteLine("\n\nTekan Tombol Apa Saja Untuk Keluar. ");
         }
     }
